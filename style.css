@@ -1,0 +1,895 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080507;
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+button {
+    border: 1px solid #d18b9d;
+    background: transparent;
+    color: white;
+
+    padding: 15px 32px;
+
+    border-radius: 40px;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+button:hover {
+    background: #d18b9d;
+    color: #160a0e;
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 30px rgba(209, 139, 157, 0.35);
+}
+
+.tela {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.conteudo {
+    max-width: 800px;
+}
+
+.mini-titulo {
+    color: #d99aaa;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+}
+
+.linha {
+    width: 80px;
+    height: 1px;
+
+    background: #c77d91;
+
+    margin: 30px auto;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    background:
+        radial-gradient(
+            circle at center,
+            #401b28 0%,
+            #180a10 50%,
+            #050304 100%
+        );
+}
+
+.inicio h1 {
+    font-size: clamp(70px, 15vw, 140px);
+
+    font-weight: normal;
+
+    letter-spacing: 5px;
+
+    color: #f8dce3;
+
+    text-shadow:
+        0 0 30px rgba(255, 140, 170, 0.3);
+
+    margin-top: 25px;
+}
+
+.inicio p {
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+.inicio small {
+    display: block;
+
+    margin-top: 35px;
+
+    color: #8f6874;
+
+    letter-spacing: 1px;
+}
+
+
+/* REVELAÇÃO */
+
+.revelacao {
+    background:
+        radial-gradient(
+            circle,
+            #4b1d2c,
+            #160a10 55%,
+            #050304
+        );
+}
+
+.revelacao h2 {
+    font-size: clamp(45px, 9vw, 85px);
+
+    font-weight: normal;
+
+    font-style: italic;
+
+    color: #f4cbd5;
+
+    margin: 30px 0;
+}
+
+.revelacao p {
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+
+    color: #d0c3c7;
+}
+
+
+/* MÚSICA NO TOPO */
+
+.musica-topo {
+    position: fixed;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 10px 18px;
+
+    border: 1px solid rgba(209, 139, 157, 0.25);
+
+    background: rgba(8, 5, 7, 0.75);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 40px;
+
+    color: #bdaab0;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    opacity: 0.9;
+}
+
+.musica-topo button {
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-color: #b86f84;
+
+    font-size: 13px;
+}
+
+.musica-topo button:hover {
+    transform: scale(1.08);
+}
+
+
+/* ANIVERSÁRIO */
+
+.aniversario {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #4a1b2a,
+            #12080d 65%,
+            #050304
+        );
+}
+
+.aniversario h2 {
+    font-size: clamp(45px, 8vw, 95px);
+
+    font-weight: normal;
+
+    line-height: 1.15;
+
+    color: #f5d6de;
+
+    margin: 35px 0;
+}
+
+.aniversario p {
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: #d1c1c6;
+}
+
+.coracao {
+    font-size: 40px;
+
+    color: #db8da2;
+
+    margin: 35px;
+}
+
+.subtexto {
+    font-size: 17px !important;
+
+    color: #a9959b !important;
+}
+
+
+/* SOBRE ELA */
+
+.sobre-ela {
+    padding: 150px 30px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.qualidades {
+    margin-top: 80px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px 60px;
+
+    text-align: left;
+}
+
+.qualidade span {
+    color: #b86f84;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+}
+
+.qualidade h3 {
+    color: #f0cbd3;
+
+    font-size: 35px;
+
+    font-weight: normal;
+
+    margin: 18px 0;
+}
+
+.qualidade p {
+    color: #afa2a7;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* MEMÓRIAS */
+
+.memorias {
+    padding: 130px 30px;
+}
+
+.titulo-secao {
+    max-width: 800px;
+
+    margin: 0 auto 100px;
+
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    color: #f0cbd3;
+
+    font-size: clamp(40px, 6vw, 65px);
+
+    font-weight: normal;
+
+    margin: 30px 0;
+}
+
+.titulo-secao p {
+    color: #aaa0a4;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.galeria {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.foto {
+    overflow: hidden;
+
+    background: #12090d;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.foto img {
+    display: block;
+
+    width: 100%;
+
+    transition: 0.6s;
+}
+
+.foto:hover img {
+    transform: scale(1.04);
+}
+
+.memoria-texto {
+    padding: 35px;
+}
+
+.memoria-texto span {
+    color: #b86f84;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+}
+
+.memoria-texto h3 {
+    color: #f0cbd3;
+
+    font-size: 35px;
+
+    font-weight: normal;
+
+    margin: 20px 0;
+}
+
+.memoria-texto p {
+    color: #aaa0a4;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* CARTA */
+
+.carta {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 150px 30px;
+
+    text-align: center;
+}
+
+.carta h2 {
+    font-size: 55px;
+
+    font-weight: normal;
+
+    color: #f1cbd5;
+
+    margin: 35px 0 60px;
+}
+
+.papel {
+    background: #eee2d4;
+
+    color: #30272a;
+
+    padding: 60px;
+
+    text-align: left;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.5);
+
+    transform: rotate(-1deg);
+}
+
+.papel p {
+    font-size: 18px;
+
+    line-height: 2;
+
+    margin-bottom: 25px;
+}
+
+.papel .assinatura {
+    text-align: right;
+
+    color: #7d394d;
+
+    margin-top: 50px;
+}
+
+
+/* REVELAÇÃO DA MÚSICA */
+
+.revelacao-musica {
+    min-height: 80vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 30px;
+
+    background:
+        radial-gradient(
+            circle,
+            #32131f,
+            #080507 70%
+        );
+}
+
+.revelacao-musica h2 {
+    font-size: clamp(35px, 6vw, 65px);
+
+    font-weight: normal;
+
+    line-height: 1.25;
+
+    color: #f0cbd4;
+
+    margin: 35px 0;
+}
+
+.revelacao-musica p {
+    color: #aaa0a4;
+
+    font-size: 18px;
+}
+
+.nome-musica {
+    margin-top: 60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.nome-musica span {
+    font-size: clamp(45px, 8vw, 80px);
+
+    font-style: italic;
+
+    color: #f1aabd;
+
+    text-shadow:
+        0 0 30px rgba(240, 130, 160, 0.3);
+}
+
+.nome-musica small {
+    color: #9e858c;
+
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+/* FINAL */
+
+.final {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background:
+        radial-gradient(
+            circle,
+            #421a27,
+            #10080c 60%,
+            #050304
+        );
+}
+
+.coracoes {
+    color: #d68196;
+
+    font-size: 25px;
+
+    margin-bottom: 40px;
+}
+
+.final h2 {
+    font-size: clamp(35px, 6vw, 60px);
+
+    font-weight: normal;
+
+    color: #eee;
+
+    margin: 35px 0;
+}
+
+.final p {
+    color: #bbaeb2;
+
+    font-size: 19px;
+
+    margin-bottom: 30px;
+}
+
+.final h1 {
+    font-size: clamp(45px, 8vw, 90px);
+
+    font-style: italic;
+
+    font-weight: normal;
+
+    color: #f1aabd;
+
+    text-shadow:
+        0 0 30px rgba(240, 130, 160, 0.3);
+
+    margin-bottom: 40px;
+}
+
+.fim {
+    color: #8f6b75;
+
+    letter-spacing: 3px;
+}
+
+
+/* ESCONDIDO */
+
+.escondido {
+    display: none;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .qualidades,
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-ela,
+    .memorias,
+    .carta {
+        padding: 100px 20px;
+    }
+
+    .papel {
+        padding: 35px 25px;
+    }
+
+    .papel p {
+        font-size: 16px;
+    }
+
+    .memoria-texto {
+        padding: 20px 5px;
+    }
+
+    .musica-topo {
+        top: 12px;
+
+        width: calc(100% - 30px);
+
+        justify-content: center;
+
+        padding: 8px 12px;
+
+        font-size: 10px;
+
+        gap: 10px;
+    }
+
+    .musica-topo button {
+        width: 34px;
+        height: 34px;
+    }
+
+    .revelacao-musica {
+        min-height: 70vh;
+
+        padding: 50px 20px;
+    }
+
+}
+/* ============================= */
+/* ANIMAÇÕES DO SITE */
+/* ============================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes surgir {
+
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* Entrada das telas */
+
+.inicio .conteudo,
+.revelacao .conteudo {
+
+    animation: aparecer 1.5s ease forwards;
+
+}
+
+
+/* Aniversário */
+
+.aniversario .conteudo {
+
+    animation: surgir 1.8s ease forwards;
+
+}
+
+
+/* Fotos */
+
+.foto {
+
+    animation: surgir 1.2s ease both;
+
+}
+
+
+/* Qualidades */
+
+.qualidade {
+
+    animation: aparecer 1s ease both;
+
+}
+
+
+/* Carta */
+
+.papel {
+
+    animation: surgir 1.5s ease both;
+
+}
+
+
+/* Revelação da música */
+
+.revelacao-musica {
+
+    animation: aparecer 1.5s ease both;
+
+}
+
+
+/* Final */
+
+.final {
+
+    animation: surgir 1.5s ease both;
+
+}
+
+
+/* Coração */
+
+.coracao {
+
+    animation: pulsar 2s infinite ease-in-out;
+
+}
+
+
+@keyframes pulsar {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+/* ============================= */
+/* ÚLTIMA SURPRESA */
+/* ============================= */
+
+.ultima-surpresa {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #35121f,
+            #090507 65%,
+            #030203 100%
+        );
+
+}
+
+
+.ultima-surpresa h2 {
+
+    font-size: clamp(40px, 7vw, 75px);
+
+    font-weight: normal;
+
+    line-height: 1.25;
+
+    color: #f2d1d9;
+
+    margin: 35px 0 70px;
+
+}
+
+
+.frase-final p {
+
+    font-size: clamp(35px, 6vw, 65px);
+
+    font-style: italic;
+
+    color: #f0a8ba;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 30px rgba(240, 130, 160, 0.25);
+
+}
+
+
+.frase-final span {
+
+    color: #a8959b;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.ultimo-coracao {
+
+    margin-top: 70px;
+
+    font-size: 35px;
+
+    color: #d68196;
+
+    animation: pulsar 2s infinite ease-in-out;
+
+}

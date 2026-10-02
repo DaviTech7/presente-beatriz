@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feliz aniversário, Beatriz ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PRIMEIRA TELA -->
+    <section id="inicio" class="tela inicio">
+
+        <div class="conteudo">
+
+            <span class="mini-titulo">
+                hoje é o seu dia
+            </span>
+
+            <h1>Beatriz</h1>
+
+            <div class="linha"></div>
+
+            <p>
+                Eu não consegui comprar<br>
+                um presente para você...
+            </p>
+
+            <button onclick="mostrarPresente()">
+                continuar ❤️
+            </button>
+
+            <small>
+                mas não queria deixar seu dia passar em branco
+            </small>
+
+        </div>
+
+    </section>
+
+
+    <!-- REVELAÇÃO -->
+    <section id="revelacao" class="tela revelacao escondido">
+
+        <div class="conteudo">
+
+            <span class="mini-titulo">
+                então pensei em uma coisa...
+            </span>
+
+            <h2>
+                eu fiz um presente.
+            </h2>
+
+            <p>
+                Não é algo que eu comprei.<br>
+                É algo que eu fiz pensando em você.
+            </p>
+
+            <button onclick="abrirPresente()">
+                abrir meu presente ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRESENTE -->
+    <main id="presente" class="escondido">
+
+
+        <!-- MÚSICA ANÔNIMA -->
+
+        <div class="musica-topo">
+
+            <button onclick="tocarMusica()" id="botaoMusica">
+                ▶
+            </button>
+
+            <span>
+                uma música para acompanhar esse presente
+            </span>
+
+        </div>
+
+        <audio id="musica">
+            <source src="alianca.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- FELIZ ANIVERSÁRIO -->
+        <section class="aniversario">
+
+            <div class="conteudo">
+
+                <span class="mini-titulo">
+                    02 • outubro
+                </span>
+
+                <h2>
+                    Feliz aniversário,<br>
+                    minha princesa. ❤️
+                </h2>
+
+                <p>
+                    Hoje não é sobre nós.
+                    <br>
+                    Hoje é sobre você.
+                </p>
+
+                <div class="coracao">
+                    ♥
+                </div>
+
+                <p class="subtexto">
+                    Sobre a pessoa linda, engraçada e incrível
+                    que você é.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE ELA -->
+        <section class="sobre-ela">
+
+            <span class="mini-titulo">
+                algumas coisas que eu amo em você
+            </span>
+
+            <div class="qualidades">
+
+                <div class="qualidade">
+
+                    <span>01</span>
+
+                    <h3>
+                        Seu jeito
+                    </h3>
+
+                    <p>
+                        Eu amo o seu jeito de ser.
+                        Você é única e é exatamente isso
+                        que faz você ser tão especial para mim.
+                    </p>
+
+                </div>
+
+
+                <div class="qualidade">
+
+                    <span>02</span>
+
+                    <h3>
+                        Seu humor
+                    </h3>
+
+                    <p>
+                        Você é engraçada, me faz rir
+                        e consegue deixar até os momentos
+                        mais simples muito melhores.
+                    </p>
+
+                </div>
+
+
+                <div class="qualidade">
+
+                    <span>03</span>
+
+                    <h3>
+                        Sua beleza
+                    </h3>
+
+                    <p>
+                        Você é linda.
+                        E eu poderia passar muito tempo
+                        tentando explicar o quanto.
+                    </p>
+
+                </div>
+
+
+                <div class="qualidade">
+
+                    <span>04</span>
+
+                    <h3>
+                        Você me faz crescer
+                    </h3>
+
+                    <p>
+                        Uma das coisas que mais admiro em você
+                        é que você sempre tenta me fazer crescer
+                        e ser uma pessoa melhor.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOTOS -->
+        <section class="memorias">
+
+            <div class="titulo-secao">
+
+                <span class="mini-titulo">
+                    algumas das nossas lembranças
+                </span>
+
+                <h2>
+                    Momentos que guardo comigo.
+                </h2>
+
+                <p>
+                    Em 4 anos e 8 meses, colecionamos
+                    muitos momentos que fazem parte
+                    da nossa história.
+                </p>
+
+            </div>
+
+
+            <div class="galeria">
+
+                <div class="foto grande">
+
+                    <img src="fotos/momento.jpeg" alt="Nós dois">
+
+                </div>
+
+
+                <div class="memoria-texto">
+
+                    <span>
+                        01 / 05
+                    </span>
+
+                    <h3>
+                        Nossos momentos.
+                    </h3>
+
+                    <p>
+                        Algumas lembranças podem parecer
+                        simples, mas são justamente essas
+                        que eu mais gosto de guardar.
+                    </p>
+
+                </div>
+
+
+                <div class="memoria-texto">
+
+                    <span>
+                        02 / 05
+                    </span>
+
+                    <h3>
+                        Nossas brincadeiras.
+                    </h3>
+
+                    <p>
+                        Porque com você eu posso simplesmente
+                        ser eu mesmo, brincar, rir e aproveitar
+                        o momento.
+                    </p>
+
+                </div>
+
+
+                <div class="foto">
+
+                    <img src="fotos/kidding.jpeg" alt="Nós dois">
+
+                </div>
+
+
+                <div class="foto">
+
+                    <img src="fotos/beijo.jpeg" alt="Nós dois">
+
+                </div>
+
+
+                <div class="memoria-texto">
+
+                    <span>
+                        03 / 05
+                    </span>
+
+                    <h3>
+                        Nosso primeiro beijo. ❤️
+                    </h3>
+
+                    <p>
+                        Um dos momentos que fazem parte
+                        do começo de tudo que construímos juntos.
+                    </p>
+
+                </div>
+
+
+                <div class="memoria-texto">
+
+                    <span>
+                        04 / 05
+                    </span>
+
+                    <h3>
+                        Nossas danças.
+                    </h3>
+
+                    <p>
+                        Dançar com você é diferente.
+                        É como se por alguns minutos
+                        o mundo fosse só nosso.
+                    </p>
+
+                </div>
+
+
+                <div class="foto">
+
+                    <img src="fotos/dança.jpeg" alt="Nós dois">
+
+                </div>
+
+
+                <div class="foto grande">
+
+                    <img src="fotos/foto1.jpeg" alt="Nós dois">
+
+                </div>
+
+
+                <div class="memoria-texto">
+
+                    <span>
+                        05 / 05
+                    </span>
+
+                    <h3>
+                        E ainda tem muito pela frente.
+                    </h3>
+
+                    <p>
+                        Essas fotos são só alguns pedacinhos
+                        da nossa história. Ainda quero criar
+                        muitos outros com você.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARTA -->
+        <section class="carta">
+
+            <span class="mini-titulo">
+                de mim para você
+            </span>
+
+            <h2>
+                Minha carta para você.
+            </h2>
+
+            <div class="papel">
+
+                <p>
+                    Meu amor,
+                </p>
+
+                <p>
+                    Eu sou completamente apaixonado por você... Amo o seu jeito,
+                    a forma como você é engraçada, extremamente linda, e amo todas
+                    as pequenas coisas que fazem você ser quem você é.
+                </p>
+
+                <p>
+                    Você é muito importante pra mim. Você me dá tanto orgulho...
+                    A mulher que você vem se tornando, a forma como você corre
+                    atrás dos seus objetivos, e o que mais me admira é que você
+                    sempre busca me incentivar a ser alguém melhor também.
+                </p>
+
+                <p>
+                    Hoje é seu aniversário, e eu queria conseguir te dar algo
+                    à altura de tudo que você merece.
+                </p>
+
+                <p>
+                    Eu não consegui comprar nada pra você. Mas eu não queria
+                    simplesmente deixar passar em branco o seu dia.
+                </p>
+
+                <p>
+                    Então fiz isso, pensando muito em você.
+                </p>
+
+                <p>
+                    Espero que goste, minha princesa. Espero que nunca esqueça
+                    o quanto eu te amo. ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- REVELAÇÃO DA MÚSICA -->
+        <section class="revelacao-musica">
+
+            <span class="mini-titulo">
+                e talvez você tenha percebido...
+            </span>
+
+            <h2>
+                Uma música esteve com você<br>
+                durante todo esse presente.
+            </h2>
+
+            <p>
+                E agora você pode descobrir qual era.
+            </p>
+
+            <div class="nome-musica">
+
+                <span>
+                    Aliança
+                </span>
+
+                <small>
+                    Tribalistas
+                </small>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL -->
+        <section class="final">
+
+            <div class="coracoes">
+                ♥　♥　♥
+            </div>
+
+            <span class="mini-titulo">
+                e antes de terminar...
+            </span>
+
+            <h2>
+                Hoje é o seu dia.
+            </h2>
+
+            <p>
+                E eu espero que você nunca esqueça
+                o quanto é amada.
+            </p>
+
+            <h1>
+                Feliz aniversário,<br>
+                minha gata. ❤️
+            </h1>
+
+            <p>
+                Obrigado por existir.
+            </p>
+
+            <span class="fim">
+                com todo meu amor, Davi
+            </span>
+
+        </section>
+
+        <!-- ÚLTIMA SURPRESA -->
+
+<section class="ultima-surpresa">
+
+    <span class="mini-titulo">
+        e se você chegou até aqui...
+    </span>
+
+    <h2>
+        Eu só queria te dizer<br>
+        mais uma coisa.
+    </h2>
+
+    <div class="frase-final">
+
+        <p>
+            Eu escolheria você de novo.
+        </p>
+
+        <span>
+            Em qualquer versão da nossa história. ❤️
+        </span>
+
+    </div>
+
+    <div class="ultimo-coracao">
+        ♥
+    </div>
+
+</section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
